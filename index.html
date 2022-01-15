@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <title>Ghost Mailer</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+      <link rel="stylesheet" href="otro.css">
+	  <link rel="shortcut icon" href="img/gst.ico" />
+   </head>
+   <body link="#ffffff" vlink="#ffffff">
+  
+      <form action="sending.php" method="post" enctype="multipart/form-data">
+         <center> <img src="img/gm.png" width="600"></center><br><!-- <h2>by Alan MOR</h2><br>-->
+		 
+		 
+		 
+<hr>		 
+<table border=0 cellspacing="5">
+		<tr>
+		<td>
+		
+			<label for="name" class="label"><b>Servidor SMTP</b></label>
+			<input type="text" name="svr_smtp" placeholder="" required>	
+		
+		</td>
+		
+		<td>
+			<label for="name" class="label"><b>Usuario SMTP</b></label>
+			<input type="text" name="usr_smtp" placeholder="" required>
+		</td>
+		
+		<td>
+			<label for="name" class="label"><b>Password SMTP</b></label>
+			<input type="password" name="pss_smtp" placeholder="" required>			
+		</td>
+		
+		<td>			
+			<label for="name" class="label"><b>Puerto</b></label>
+			<select name="port_smtp" class="input">
+				<option value="2525">2525</option>
+				<option value="587">587</option>
+				<option value="465">465</option>
+				<option value="26">26</option>
+				<option value="25">25</option>
+				
+			<!--<input type="text" name="port_smtp" placeholder="" required> -->
+
+
+
+
+
+		</td>
+
+		<td>
+			<label for="name" class="label"><b>NA</b></label>
+			<input type="radio" name="enc" value="na" checked>
+
+		</td>
+		<td>
+			<label for="name" class="label"><b>SSL</b></label>
+			<input type="radio" name="enc" value="ssl">
+
+		</td>
+		<td>
+			<label for="name" class="label"><b>TLS</b></label>
+			<input type="radio" name="enc" value="tls">
+
+		</td>
+
+
+
+		
+		</tr>
+		
+
+
+		
+</table>
+		 
+<hr>	 
+		 
+		 
+		 <table border=0 cellspacing="40">
+		<tr>
+		<td valign="top" width="25%"><!-- Columna Izquierda Inicio-->
+		
+		           <label for="name" class="label"><b>Nombre del Remitente</b></label>
+			<input type="text" name="nremitente" placeholder="" required><br>
+			
+          <label for="name" class="label"><b>Email del Remitente</b></label>
+         <input type="email" name="remitente" placeholder="" required><br>
+		 
+          <label for="name" class="label"><b>Asunto del Email</b></label>
+		 <input type="text" name="asunto" placeholder="" required><br>
+		 
+          <label for="name" class="label"><b>Selecciona la BD en TXT</b></label>
+       <!--  <input type="text" name="base" placeholder="" required> -->
+		 <input name="base" type="file" required accept="text/plain"  />
+		 
+		 <label for="name" class="label"><b>Adjuntar Archivo</b></label>
+		 <input name="adjunto" type="file" />
+		 
+	<!--	 <label for="name" class="label">Copiar envío a </label>
+         <input type="text" name="copiar" placeholder="Copiar envío a">-->
+		 
+		  <label for="name" class="label"><b>Password ( internet )</b></label>
+         <input type="password" name="pss" placeholder="" required>
+		
+		
+		</td>
+		<td> <!-- Columna Derecha Inicio-->
+		
+		 <label for="name" class="label"><b>Codigo HTML</b></label>
+         <textarea name="contenido" placeholder="" font face="sans-serif" required></textarea>	
+		 
+          <label for="name" class="label"><b>Versión de Texto Plano</b></label>
+         <textarea name="contenidotp" placeholder="" font face="sans-serif"></textarea>
+		 
+         <input type="submit" value="ENVIAR" id="boton">
+		
+		
+		</td>
+		</tr></table>
+		 
+
+
+
+
+		 
+         
+         
+  </form><br><br>
+
+
+	<center>
+
+			 <label for="name" class="label">
+			 	<a target="_blank" href="https://www.unlocktheinbox.com/spamscore/">Editor HTML </a>
+			 </label>
+
+			 <label for="name" class="label">
+				<a href="checker.html"> | Checker </a>
+			 </label>
+
+ <br><br> <label for="name" class="label" style="color:#FFF">Creado por Alan MOR 2020</label><br><br> <img src="img/telefono.png" width="160">   <img src="img/email.png" width="200">
+		</center>
+
+  <br><br><br>
+  </body>
+</html>   
